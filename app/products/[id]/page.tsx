@@ -3,6 +3,7 @@ interface ProductsIdPageProps {
 }
 
 export default async function ProductsIdPage({ params }: ProductsIdPageProps) {
+  console.log(params);
   const { id } = await params;
   return <div>Product ID: {id}</div>;
 }
