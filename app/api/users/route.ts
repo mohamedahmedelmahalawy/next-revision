@@ -1,5 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
 export const users = [
   { id: 1, name: "Alice", email: "alice@example.com", age: 25 },
   { id: 2, name: "Bob", email: "bob@example.com", age: 30 },
